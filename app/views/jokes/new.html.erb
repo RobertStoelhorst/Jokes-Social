@@ -1,0 +1,14 @@
+<h1>New Joke</h1>
+
+<%= form_for @joke do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, :placeholder => 'Funny' %>
+
+  <%= f.label :setup %>
+  <%= f.text_field :setup, :placeholder => 'Why did the chicken cross the road' %>
+
+  <%= f.label :punchline %>
+  <%= f.text_field :punchline, :placeholder => 'To get to the other side' %>
+  
+  <%= f.submit %>
+<% end %>
