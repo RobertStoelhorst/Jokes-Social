@@ -15,7 +15,7 @@
         <% if @current_user.admin? %>
           <%= link_to 'All users', users_path %>
         <% end %>
-        <%= link_to 'New mixtape', new_mixtape_path %>
+        <%= link_to 'New Joke', new_joke_path %>
         <%= link_to "Log out #{ @current_user.email }", login_path, :method => 'delete' %>
       <% else %>
         <%= link_to 'Sign up', new_user_path %>
