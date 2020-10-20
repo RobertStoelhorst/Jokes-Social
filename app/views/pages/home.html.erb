@@ -1,6 +1,10 @@
-<h1>All Jokes</h1>
-
-
 <% if @current_user.present? %>
+  <h1>Your Jokes</h1>
   <p>You are currently logged in as <%= @current_user.email %></p>
+<% else %>
+  <h1>All Jokes</h1>
+<% end %>
+
+<% @jokes.each do |joke| %>
+<%= link_to joke.title, joke_path(joke) %>
 <% end %>

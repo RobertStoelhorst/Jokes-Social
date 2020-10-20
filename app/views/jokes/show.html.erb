@@ -1,0 +1,11 @@
+<h1>showing joke soon</h1>
+
+<h4><%= @joke.title %></h4>
+<p><%= @joke.setup %></p>
+<p><%= @joke.punchline %></p>
+
+
+<div class="controls">
+  <%= link_to "Edit Joke", edit_joke_path(@joke) %>
+  <%= button_to "Delete Joke", joke_path(@joke.id), :method => "delete", :data => { :confirm => "are you sure" } %>
+</div>
