@@ -15,7 +15,7 @@
 liked this joke
 
 <div class="controls">
-  <% if @current_user.present? && @current_user.jokes.include?(@joke) || @current_user.admin? %>
+  <% if @current_user.present? && (@current_user.jokes.include?(@joke) || @current_user.admin?) %>
   <%= link_to "Edit Joke", edit_joke_path(@joke) %>
   <%= button_to "Delete Joke", joke_path(@joke.id), :method => "delete", :data => { :confirm => "are you sure" } %>
   <% end %>
