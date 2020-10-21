@@ -31,6 +31,20 @@ class JokesController < ApplicationController
     redirect_to root_path
   end
 
+  def like
+    #grabbing the joke
+    @joke = Joke.find params[:id]
+    #creating a like with that joke and the current user's id
+    Like.create(user_id: @current_user.id, joke_id: @joke.id)
+    #redirecting them back to that joke
+    redirect_to joke_path(@joke)
+  end
+
+  def unlike
+      @current_user.likes.where(:joke_id => params[:id]).destroy_all
+      redirect_to joke_path(params[:id])
+  end
+
   def destroy
     joke = Joke.find params[:id]
     joke.destroy

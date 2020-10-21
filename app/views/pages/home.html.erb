@@ -8,3 +8,9 @@
 <% @jokes.each do |joke| %>
 <%= link_to joke.title, joke_path(joke) %>
 <% end %>
+
+<% if @current_user.present? %>
+<p>
+<%= link_to "All jokes", jokes_path %>
+</p>
+<% end %>

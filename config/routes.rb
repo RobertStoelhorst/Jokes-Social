@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   get 'jokes/new'
   root :to => 'pages#home'
-  resources :users, :only => [:new, :create, :index]
+  resources :users, :only => [:new, :create, :index, :destroy]
 
   get '/login' => 'session#new'
   post 'login' => 'session#create'
   delete '/login' => 'session#destroy'
-  put '/joke/:id/like' to: 'jokes#like', as: 'like'
+  put '/joke/:id/like' => 'jokes#like', as: 'like'
+  delete 'joke/:id/like' => 'jokes#unlike'
 
-  resources :jokes, :only => [:new, :create]
+  resources :jokes
 end

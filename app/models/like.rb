@@ -1,4 +1,5 @@
 class Like < ApplicationRecord
-  belongs_to :user_id
-  belongs_to :joke_id
+  belongs_to :user
+  belongs_to :joke
+  validates :user_id, uniqueness: {scope: :joke_id}
 end

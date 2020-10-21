@@ -13,6 +13,10 @@ puts "#{ User.count } users."
 Joke.destroy_all
 j1 = Joke.create :title => "Grandmother", :setup => "I saw my grandmother the other day...probably for the last time.", :punchline => "Oh, she's not sick or anything, she just bores the hell out of me"
 j2 = Joke.create :title => "Safe Sex", :setup => "The only way to have safe sex is to abstain.", :punchline => "From drinking."
+# puts "#{ Joke.count } jokes."
+
+Like.destroy_all
+puts "#{ Like.count } likes."
 
 Genre.destroy_all
 g1 = Genre.create :name => "Two liner"

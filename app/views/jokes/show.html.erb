@@ -1,11 +1,22 @@
-<h1>showing joke soon</h1>
+<h1>Joke</h1>
 
 <h4><%= @joke.title %></h4>
 <p><%= @joke.setup %></p>
 <p><%= @joke.punchline %></p>
 
+<% if @current_user.present? %>
+  <% if @joke.liked?(@current_user) %>
+    <%= button_to "Unlike", like_path(@joke), method: "delete" %>
+  <% else %>
+    <%= button_to "Like", like_path(@joke), method: "put" %>
+  <% end %>
+<% end %>
+<%= pluralize @joke.likes.count, "person" %>
+liked this joke
 
 <div class="controls">
+  <% if @current_user.present? && @current_user.jokes.include?(@joke) || @current_user.admin? %>
   <%= link_to "Edit Joke", edit_joke_path(@joke) %>
   <%= button_to "Delete Joke", joke_path(@joke.id), :method => "delete", :data => { :confirm => "are you sure" } %>
+  <% end %>
 </div>
