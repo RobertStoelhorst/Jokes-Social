@@ -44,22 +44,25 @@ h1, h2, h3, h4 {
 }
 
 .controls {
-  display: inline;
-  position: absolute;
-  top: 100px;
-  right: 30px;
+
 }
 
 .editButton {
+  position: absolute;
+  top: 70px;
+  right: 30px;
   color: black;
   background-color: #efefef;
   border: 2px solid #858585;
-  padding: 3px 6px 3px 6px;
+  padding: 1px 6px 1px 6px;
   border-radius: 0.3em;
   margin: 5px;
 }
 
 .deleteButton {
+  position: absolute;
+  top: 70px;
+  right: 130px;
   margin: 5px;
   border-radius: 0.3em;
 }
@@ -68,6 +71,7 @@ h1, h2, h3, h4 {
   margin: 10px;
 }
 
-.user {
-  color: blue;
+.userEmail {
+  color: #007bff;
+  font-size: 15px;
 }

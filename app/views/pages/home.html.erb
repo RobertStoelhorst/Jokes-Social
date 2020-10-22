@@ -25,4 +25,7 @@
 <p id="userJoke" style="display:none">
   <%= @joke.setup %><br>
   <%= @joke.punchline%><br>
-</p>
+  by user:
+<span class="userEmail"><%= @joke.user.try :email %></span>
+</p><br>
+<button onclick="location.reload()">Reload</button>

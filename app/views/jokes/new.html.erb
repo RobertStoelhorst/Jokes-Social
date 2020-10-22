@@ -3,15 +3,15 @@
 <%= form_for @joke do |f| %>
  <div class="form-group">
   <%= f.label :title %>
-  <%= f.text_field :title, :placeholder => 'Funny', :class => 'form-group', :required => true %>
+  <%= f.text_field :title, :placeholder => 'Funny', :required => true, :class => 'form-control' %>
  </div>
  <div class="form-group">
   <%= f.label :setup %>
-  <%= f.text_field :setup, :placeholder => 'Why did the chicken cross the road', :class => 'form-group', :required => true %>
+  <%= f.text_field :setup, :placeholder => 'Why did the chicken cross the road?', :required => true, :class => 'form-control' %>
  </div>
  <div class="form-group">
   <%= f.label :punchline %>
-  <%= f.text_field :punchline, :placeholder => 'To get to the other side', :class => 'form-group', :required => true %>
+  <%= f.text_field :punchline, :placeholder => 'To get to the other side', :required => true, :class => 'form-control' %>
  </div>
   <%= f.submit "Create Joke!", :class => 'btn btn-warning'  %>
 <% end %>
