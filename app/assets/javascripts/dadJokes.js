@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-let gemJoke = function() {
+const gemJoke = function() {
   $("#dadJoke").fadeIn(2000).text()
 };
 
-let databaseJoke = function() {
+const databaseJoke = function() {
   $("#userJoke").fadeIn(2000).text()
 };
 
