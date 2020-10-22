@@ -6,7 +6,6 @@
 
 #### Summary
 This is my project from our second full project week While studying Software Engineering Immersive at General Assembly.
-
 Over all it is week six of the course and we have covered HTML & CSS, Js, Dom, Jquery, Ruby on Rails, Sinatra and other bits and pieces.
 
 The aim of this project was to build a Frontend and Backend with at least a 3 model database structure, We got to choose our own projects and were given 1 week to deliver.
