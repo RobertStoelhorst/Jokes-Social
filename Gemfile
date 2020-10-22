@@ -29,6 +29,10 @@ gem 'bootstrap'
 #
 gem 'jquery-rails'
 
+gem 'httparty'
+
+gem 'dad_jokes'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

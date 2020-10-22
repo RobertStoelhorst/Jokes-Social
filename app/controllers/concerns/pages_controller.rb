@@ -5,5 +5,6 @@ class PagesController < ApplicationController
     else
       @jokes = Joke.all
     end
+      @joke = Joke.all.sample
   end
 end

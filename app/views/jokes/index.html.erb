@@ -1,5 +1,5 @@
 <h1>All Jokes</h1>
 
 <% @jokes.each do |joke| %>
-<%= link_to joke.title, joke_path(joke) %>
+<%= link_to joke.title, joke_path(joke), :class => 'btn btn-outline-info' %>
 <% end %>

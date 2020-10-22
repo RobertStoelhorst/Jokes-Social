@@ -2,13 +2,13 @@
 
 <%= form_for @joke do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title, :placeholder => 'Funny' %>
+  <%= f.text_field :title, :placeholder => 'Funny', :required => true %>
 
   <%= f.label :setup %>
-  <%= f.text_field :setup, :placeholder => 'Why did the chicken cross the road' %>
+  <%= f.text_field :setup, :placeholder => 'Why did the chicken cross the road', :required => true  %>
 
   <%= f.label :punchline %>
-  <%= f.text_field :punchline, :placeholder => 'To get to the other side' %>
+  <%= f.text_field :punchline, :placeholder => 'To get to the other side', :required => true  %>
 
   <%= f.submit %>
 <% end %>
