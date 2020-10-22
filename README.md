@@ -4,6 +4,8 @@
 
 ### Version 1.0.0
 
+### Deployed to [Heroku](https://murmuring-basin-92750.herokuapp.com/) 
+
 #### Summary
 This is my project from our second full project week While studying Software Engineering Immersive at General Assembly.
 Over all it is week six of the course and we have covered HTML & CSS, Js, Dom, Jquery, Ruby on Rails, Sinatra and other bits and pieces.
