@@ -19,5 +19,9 @@ I would like to revisit this project and add one more model where a user can sch
 #### Contributors
 - Robert Stoelhorst <robbiestoelhorst@hotmail.com>
 
+#### Database structure
+
+![](readMeImages/ScreenShotDatabase.png)
+
 ## License & copyright
 © Robert D Stoelhorst, General Assembly
