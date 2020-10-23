@@ -36,6 +36,8 @@ Once I got a start on a very few and simple as it turns out lines of code in my 
 #### Evolution
 I have many ideas for what I would like to do with this app, I will first try and ground myself and build a bit more knowledge around my areas of weakness, for example Associations and Controllers and I also really want to learn how to implement API's and to better understand the Gems and how they talk to my system.
 
+My main priority would be to implement cloudinary and give users the ability to upload a profile image. I didn't set out with that in mind but I know it's a skill I will likely need. and as we have covered this in the course I don't want to move on without at least some fundamental knowledge of how it works.
+
 When I have a better grasp of these I should be able to build on this project much more fluently.  
 I also need to go back over all of my code and make comments and think about the pseudocode much more.
 
@@ -50,6 +52,10 @@ In general understanding and decoding the syntax is getting better for me.
 this line of code while building the likes model from a tutorial was the one that stood out as not being clear to me.
 from my joke.rb file
 ```!!self.likes.find{|like| like.user_id == user.id}```
+
+## Under development
+
+I have a joke Genre model and Table which I am still working on and will be a reasonably large expansion to this project, but currently there is no data, properties or associations for this model.
 
 ## License & copyright
 © Robert D Stoelhorst, General Assembly
