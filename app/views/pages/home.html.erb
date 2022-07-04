@@ -1,0 +1,31 @@
+<% if @current_user.present? %>
+  <h1>Your Jokes</h1>
+  <p>You are currently logged in as <%= @current_user.email %></p>
+<% else %>
+  <h1>All Jokes</h1>
+<% end %>
+
+<% @jokes.each do |joke| %>
+<%= link_to joke.title, joke_path(joke), :class => 'btn btn-outline-info' %>
+<% end %>
+
+<% if @current_user.present? %>
+  <p>
+    <%= link_to "All jokes", jokes_path, :class => 'btn btn-success' %>
+  </p>
+<% end %>
+<br>
+
+
+<button  id="getDadJoke" class="btn btn-secondary">Random Dad Joke</button>
+<p id="dadJoke" style="display:none"><%= DadJokes.random  %></p>
+<br>
+
+<button id="getUserJoke" class="btn btn-secondary">Random User Joke</button>
+<p id="userJoke" style="display:none">
+  <%= @joke.setup %><br>
+  <%= @joke.punchline%><br>
+  by user:
+<span class="userEmail"><%= @joke.user.try :email %></span>
+</p><br>
+<button onclick="location.reload()">Reload</button>
